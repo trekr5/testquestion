@@ -1,0 +1,24 @@
+#!/bin/bash
+
+if [ $# -lt 3 ] ; then
+  echo "Usage: $0 <limit> <1st_multiplier> <2nd_multiplier>"
+  exit 5
+  fi
+
+limit=$1
+first_multiplier=$2
+second_multiplier=$3
+
+for number in `seq 1 $limit`; do
+  echo -e -n "$number "
+
+  if [ $[number % $first_multiplier] -eq 0 ]; then
+    echo -e -n "Fizz"
+  fi
+
+  if [ $[number % $second_multiplier] -eq 0 ]; then
+    echo -e -n "Buzz"
+  fi
+
+  echo
+done
