@@ -1,4 +1,4 @@
- This repository contains my sample Bash shell code for the fizz buzz challenge
+ This repository contains my sample Bash shell code for the fizz buzz challenge.
  
  FIZZBUZZ 30 6 12
 
